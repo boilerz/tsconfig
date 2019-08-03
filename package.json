@@ -1,0 +1,11 @@
+{
+  "name": "@boilerz/tsconfig",
+  "version": "1.0.0",
+  "description": "TS Config",
+  "main": "tsconfig.json",
+  "repository": "git@github.com:boilerz/tsconfig.git",
+  "author": "momsse",
+  "license": "MIT",
+  "private": false,
+  "files": ["tsconfig.json"]
+}

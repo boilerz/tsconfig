@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    "module": "commonjs",
+    "noUnusedLocals": true,
+    "target": "es6",
+    "pretty": true,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "jsx": "react"
+  },
+  "exclude": [
+    "coverage",
+    "dist",
+    "jest.config.js",
+    "src/**/*.spec.tsx",
+    "src/**/*.stories.tsx"
+  ]
+}
