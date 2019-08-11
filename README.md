@@ -24,6 +24,5 @@ yarn add -D @boilerz/tsconfig
 
 ```bash
 yarn version
-yarn build
-yarn publish dist --access public
+yarn publish --access public
 ```
