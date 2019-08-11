@@ -19,3 +19,11 @@ yarn add -D @boilerz/tsconfig
   "extends": "@boilerz/tsconfig"
 }
 ```
+
+### Release
+
+```bash
+yarn version
+yarn build
+yarn publish dist --access public
+```
