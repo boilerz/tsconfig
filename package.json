@@ -1,6 +1,6 @@
 {
   "name": "@boilerz/tsconfig",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "TS Config",
   "main": "tsconfig.json",
   "repository": "git@github.com:boilerz/tsconfig.git",
