@@ -9,5 +9,8 @@
   "private": false,
   "files": [
     "tsconfig.json"
-  ]
+  ],
+  "scripts": {
+    "test": "exit 0"
+  }
 }
