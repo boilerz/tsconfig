@@ -1,5 +1,6 @@
 # @boilerz/tsconfig
 
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/boilerz/tsconfig/blob/master/LICENSE)
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/boilerz/tsconfig)](https://www.npmjs.com/package/@boilerz/tsconfig)
 
 > TS Config.
