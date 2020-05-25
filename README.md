@@ -9,12 +9,34 @@
 ### Install
 
 ```bash
-yarn add -D @boilerz/super-server-mongo
+npx install-peerdeps -d @boilerz/super-server-mongo
 ```
 
 ### Usage
 
-// ...
+
+```typescript
+import { Arg, Query, Resolver } from 'type-graphql';
+import * as superServer from '@boilerz/super-server';
+import mongoPlugin from '@boilerz/super-server-mongo';
+
+@Resolver()
+class GreetingResolver {
+  @Query(() => String)
+  public hello(@Arg('name') name: string): string {
+    return `Hello ${name}`;
+  }
+}
+
+superServer
+  .start({
+    resolvers: [GreetingResolver],
+    plugins: [mongoPlugin], // <-- Plugin here
+  })
+  .catch(console.error);
+```
+
+Another example with local auth plugin [example](https://github.com/boilerz/super-server/blob/master/examples/withLocalAuth.ts)
 
 ### Release
 
