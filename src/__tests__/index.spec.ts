@@ -1,7 +1,34 @@
-import add from '../index';
+import * as mongooseHelper from '@boilerz/mongoose-helper';
+import plugin from '../index';
 
-describe('super lib', () => {
-  it('should add with success', () => {
-    expect(add(2, 3)).toEqual(5);
+describe('Plugin', () => {
+  describe('#setup', () => {
+    it('should setup the plugin', async () => {
+      const mongooseHelperConnectSpy = jest
+        .spyOn(mongooseHelper, 'connect')
+        .mockResolvedValue(null);
+
+      await plugin.setup();
+
+      expect(mongooseHelperConnectSpy).toHaveBeenCalled();
+    });
+  });
+
+  describe('#tearDown', () => {
+    it('should tear down the plugin', async () => {
+      const mongooseHelperDisconnectSpy = jest
+        .spyOn(mongooseHelper, 'disconnect')
+        .mockResolvedValue(undefined);
+
+      await plugin.tearDown();
+
+      expect(mongooseHelperDisconnectSpy).toHaveBeenCalled();
+    });
+  });
+
+  describe('#getResolvers', () => {
+    it('should return plugin resolvers', () => {
+      expect(plugin.getResolvers()).toEqual([]);
+    });
   });
 });
