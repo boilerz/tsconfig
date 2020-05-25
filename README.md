@@ -9,7 +9,7 @@
 ### Install
 
 ```bash
-npx install-peerdeps -d @boilerz/super-server-mongo
+npx install-peerdeps @boilerz/super-server-mongo
 ```
 
 ### Usage
