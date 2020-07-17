@@ -33,7 +33,7 @@
     "mongoose": "^5.9.25",
     "prettier": "^2.0.5",
     "ts-jest": "^25.5.1",
-    "type-graphql": "^1.0.0-rc.2",
+    "type-graphql": "^1.0.0-rc.3",
     "typescript": "^3"
   },
   "resolutions": {
