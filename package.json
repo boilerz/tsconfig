@@ -31,7 +31,7 @@
     "express": "^4.17.1",
     "jest": "^25.5.4",
     "mongoose": "^5.10.0",
-    "prettier": "^2.1.0",
+    "prettier": "^2.1.1",
     "ts-jest": "^25.5.1",
     "type-graphql": "^1.0.0-rc.3",
     "typescript": "^3"
