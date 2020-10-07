@@ -25,10 +25,4 @@ describe('Plugin', () => {
       expect(mongooseHelperDisconnectSpy).toHaveBeenCalled();
     });
   });
-
-  describe('#getResolvers', () => {
-    it('should return plugin resolvers', () => {
-      expect(plugin.getResolvers()).toEqual([]);
-    });
-  });
 });

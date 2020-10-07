@@ -1,13 +1,9 @@
 import * as mongooseHelper from '@boilerz/mongoose-helper';
-import type { Resolver, SuperServerPlugin } from '@boilerz/super-server';
+import type { SuperServerPlugin } from '@boilerz/super-server';
 
 const plugin: SuperServerPlugin = {
   async configure(): Promise<void> {
     // Noop
-  },
-
-  getResolvers(): Resolver[] {
-    return [];
   },
 
   async setup(): Promise<void> {
