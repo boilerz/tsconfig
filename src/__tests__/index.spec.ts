@@ -6,7 +6,7 @@ describe('Plugin', () => {
     it('should setup the plugin', async () => {
       const mongooseHelperConnectSpy = jest
         .spyOn(mongooseHelper, 'connect')
-        .mockResolvedValue(null);
+        .mockResolvedValue();
 
       await plugin.setup();
 
