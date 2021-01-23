@@ -35,5 +35,8 @@
     "ts-jest": "^25.5.1",
     "type-graphql": "^1.1.1",
     "typescript": "^3"
+  },
+  "resolutions": {
+    "node-notifier": "^9.0.0"
   }
 }
