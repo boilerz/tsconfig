@@ -1,4 +1,5 @@
 import * as mongooseHelper from '@boilerz/mongoose-helper';
+
 import plugin from '../index';
 
 describe('Plugin', () => {
