@@ -35,8 +35,5 @@
     "ts-jest": "^25.5.1",
     "type-graphql": "^1.1.1",
     "typescript": "^3"
-  },
-  "resolutions": {
-    "eslint/mkdirp/minimist": "^1.2.5"
   }
 }
