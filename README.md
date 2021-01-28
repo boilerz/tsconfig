@@ -1,7 +1,7 @@
 # @boilerz/super-server-mongo
 
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/boilerz/super-server-mongo)](https://www.npmjs.com/package/@boilerz/super-server-mongo)
-[![CircleCI](https://circleci.com/gh/boilerz/super-server-mongo/tree/master.svg?style=shield)](https://circleci.com/gh/boilerz/super-server-mongo/tree/master)
+[![GH CI Action](https://github.com/boilerz/super-server-mongo/workflows/CI/badge.svg)](https://github.com/boilerz/super-server-mongo/actions?query=workflow:CI)
 [![codecov](https://codecov.io/gh/boilerz/super-server-mongo/branch/master/graph/badge.svg)](https://codecov.io/gh/boilerz/super-server-mongo)
 
 > Mongo database support for super server
