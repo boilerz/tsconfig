@@ -37,6 +37,7 @@
     "typescript": "^3"
   },
   "resolutions": {
-    "node-notifier": "^9.0.0"
+    "node-notifier": "^9.0.0",
+    "graphql-tools": "4.0.7"
   }
 }
