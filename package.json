@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@boilerz/build-tools": "^1.4.8",
-    "@boilerz/eslint-config": "^2.0.3",
+    "@boilerz/eslint-config": "^2.0.5",
     "@boilerz/logger": "^1.1.11",
     "@boilerz/mongoose-helper": "1.2.15",
     "@boilerz/prettier-config": "^1.0.3",
