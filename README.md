@@ -21,6 +21,16 @@ yarn add -D @boilerz/tsconfig
 }
 ```
 
+`tsconfig.production.json` example (exclude a set of non-necessary assets from the build):
+
+```json
+{
+  "extends": "@boilerz/tsconfig/production"
+}
+```
+
+[@boilerz/build-tools](https://github.com/boilerz/build-tools) will use `tsconfig.production.json` when detected.
+
 ### Release
 
 ```bash

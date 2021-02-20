@@ -18,13 +18,5 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "jsx": "react"
-  },
-  "exclude": [
-    "coverage",
-    "dist",
-    "jest.config.js",
-    "src/**/*.spec.ts",
-    "src/**/*.spec.tsx",
-    "src/**/*.stories.tsx"
-  ]
+  }
 }

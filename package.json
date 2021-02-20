@@ -8,7 +8,8 @@
   "license": "MIT",
   "private": false,
   "files": [
-    "tsconfig.json"
+    "tsconfig.json",
+    "production.json"
   ],
   "scripts": {
     "test": "exit 0"
