@@ -2,16 +2,29 @@
   "name": "@boilerz/tsconfig",
   "version": "1.4.0",
   "description": "TS Config",
-  "main": "tsconfig.json",
   "repository": "git@github.com:boilerz/tsconfig.git",
   "author": "momsse",
   "license": "MIT",
-  "private": false,
-  "files": [
-    "tsconfig.json",
-    "production.json"
-  ],
+  "private": true,
   "scripts": {
+    "lint": "eslint --ext .ts .",
+    "build": "node -r ts-node/register src/generate.ts",
     "test": "exit 0"
+  },
+  "devDependencies": {
+    "@boilerz/eslint-config": "2.0.11",
+    "@boilerz/prettier-config": "^1.0.3",
+    "@types/lodash.merge": "^4.6.6",
+    "@types/node": "^14.14.31",
+    "eslint": "^7.20.0",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.1.1",
+    "type-fest": "^0.21.1",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "@tsconfig/node14": "^1.0.0",
+    "@tsconfig/react-native": "^1.0.2",
+    "lodash.merge": "^4.6.2"
   }
 }
