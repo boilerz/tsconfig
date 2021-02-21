@@ -11,6 +11,9 @@ const base: TsConfigJson = merge<
   {},
   {
     extends: '@tsconfig/node14',
+    compilerOptions: {
+      noEmit: true,
+    },
   },
   commonConfig.base,
 );
@@ -24,6 +27,8 @@ const production: TsConfigJson = merge<
   compilerOptions: {
     rootDir: 'src',
     outDir: 'dist',
+    noEmit: false,
+    declaration: true,
   },
 });
 
