@@ -18,8 +18,14 @@ const base: TsConfigJson = merge<
 const production: TsConfigJson = merge<
   Record<string, unknown>,
   TsConfigJson,
+  TsConfigJson,
   TsConfigJson
->({}, base, commonConfig.production);
+>({}, base, commonConfig.production, {
+  compilerOptions: {
+    rootDir: 'src',
+    outDir: 'dist',
+  },
+});
 
 const config: Config = {
   description: 'Node TS Config',
