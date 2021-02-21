@@ -2,6 +2,7 @@ import merge from 'lodash.merge';
 import type { TsConfigJson } from 'type-fest';
 
 import commonConfig, { Config } from './common';
+import { relativePathToPackage } from './helper';
 
 const base: TsConfigJson = merge<
   Record<string, unknown>,
@@ -25,8 +26,8 @@ const production: TsConfigJson = merge<
   TsConfigJson
 >({}, base, commonConfig.production, {
   compilerOptions: {
-    rootDir: 'src',
-    outDir: 'dist',
+    rootDir: relativePathToPackage('src'),
+    outDir: relativePathToPackage('dist'),
     noEmit: false,
     noEmitOnError: true,
     declaration: true,

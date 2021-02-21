@@ -2,6 +2,7 @@ import merge from 'lodash.merge';
 import type { TsConfigJson } from 'type-fest';
 
 import commonConfig, { Config } from './common';
+import { relativePathToPackage } from './helper';
 
 const base: TsConfigJson = merge<
   Record<string, unknown>,
@@ -21,7 +22,7 @@ const production: TsConfigJson = merge<
   TsConfigJson,
   TsConfigJson
 >({}, base, commonConfig.production, {
-  exclude: ['babel.config.js', 'metro.config.js'],
+  exclude: relativePathToPackage(['babel.config.js', 'metro.config.js']),
 });
 
 const config: Config = {

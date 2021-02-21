@@ -1,6 +1,8 @@
 import merge from 'lodash.merge';
 import type { TsConfigJson } from 'type-fest';
 
+import { relativePathToPackage } from './helper';
+
 export interface Config {
   description: string;
   suffix?: string;
@@ -30,7 +32,7 @@ const production: TsConfigJson = merge<
   compilerOptions: {
     sourceMap: false,
   },
-  exclude: [
+  exclude: relativePathToPackage([
     'node_modules',
     'examples',
     'coverage',
@@ -39,7 +41,7 @@ const production: TsConfigJson = merge<
     'src/**/*.spec.ts',
     'src/**/*.spec.tsx',
     'src/**/*.stories.tsx',
-  ],
+  ]),
 });
 
 const config: Config = {
