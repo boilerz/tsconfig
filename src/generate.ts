@@ -58,7 +58,7 @@ async function generatePackage(config: Config): Promise<void> {
         writeFileAsync(
           `packages/${name}/README.md`,
           readme
-            .replace(/boilerz\/tsconfig/g, `boilerz/${name}`)
+            .replace(/@boilerz\/tsconfig/g, `@boilerz/${name}`)
             .replace('> TS Config.', `> ${config.description}`),
         ),
         writeFileAsync(
