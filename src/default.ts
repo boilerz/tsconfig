@@ -28,6 +28,7 @@ const production: TsConfigJson = merge<
     rootDir: 'src',
     outDir: 'dist',
     noEmit: false,
+    noEmitOnError: true,
     declaration: true,
   },
 });
