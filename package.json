@@ -8,6 +8,7 @@
   "private": true,
   "scripts": {
     "lint": "eslint --ext .ts .",
+    "typecheck": "tsc",
     "build": "node -r ts-node/register src/generate.ts",
     "test": "exit 0"
   },
