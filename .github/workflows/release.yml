@@ -30,7 +30,7 @@ jobs:
 
       - uses: boilerz/action-release@master
         with:
-          publishDirectory: 'dist'
+          publishDirectory: 'packages'
           buildStep: 'true'
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
