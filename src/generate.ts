@@ -4,6 +4,7 @@ import util from 'util';
 import type { PackageJson } from 'type-fest';
 
 import packageJson from '../package.json';
+import cliConfig from './cli';
 import { Config } from './common';
 import defaultConfig from './default';
 import reactNativeConfig from './react-native';
@@ -79,7 +80,7 @@ async function generatePackage(config: Config): Promise<void> {
 }
 
 async function generate(
-  configs: Config[] = [defaultConfig, reactNativeConfig],
+  configs: Config[] = [defaultConfig, cliConfig, reactNativeConfig],
 ): Promise<void> {
   readme = (await readFileAsync('README.md')).toString('utf-8');
   await rmdirAsync('packages', { recursive: true });
