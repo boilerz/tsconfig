@@ -11,7 +11,7 @@ const base: TsConfigJson = merge<
 >(
   {},
   {
-    extends: '@tsconfig/node14',
+    extends: '@tsconfig/node16',
     compilerOptions: {
       noEmit: true,
     },
