@@ -4,21 +4,21 @@ import type { TsConfigJson } from 'type-fest';
 import { Config } from './common';
 import defaultConfig from './default';
 
-const node10Config: TsConfigJson = {
-  extends: '@tsconfig/node10',
+const nodeConfig: TsConfigJson = {
+  extends: '@tsconfig/node12',
 };
 
 const base: TsConfigJson = merge<
   Record<string, unknown>,
   TsConfigJson,
   TsConfigJson
->({}, defaultConfig.base, node10Config);
+>({}, defaultConfig.base, nodeConfig);
 
 const production: TsConfigJson = merge<
   Record<string, unknown>,
   TsConfigJson,
   TsConfigJson
->({}, defaultConfig.production, node10Config);
+>({}, defaultConfig.production, nodeConfig);
 
 const config: Config = {
   description: 'CLI TS Config',
